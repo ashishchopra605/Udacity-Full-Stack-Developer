@@ -17,5 +17,5 @@ I have used several technologies in this project in order to help my workflow. I
 </ul>
 <h3>How to Run</h3>
 
-You can view the page by opening <u>Build-a-Portfolio.html</u>
+You can view the page by opening Build-a-Portfolio.html.
 
