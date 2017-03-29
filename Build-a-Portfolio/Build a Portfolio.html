@@ -1,0 +1,153 @@
+    <!DOCTYPE html>
+    
+    <!-- this is an Html Document. it describes the Layout of a Website.-->
+
+    <html lang="en">
+
+    <head>
+
+    	<!-- This tells the browser how to read the document. -->
+    	<meta charset="utf-8">
+
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	
+    	<!-- This means that the browser will (probably) render the width of the page at the width of its own screen. -->
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	<!-- title of Page -->
+    	<title>My Portfolio</title>
+
+    	<!-- load font style  -->
+    	<link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet" type="text/css">
+
+    	<script src="js/jquery-3.1.1.min.js"></script>
+
+    	<!-- Bootstrap -->
+    	<script src="js/bootstrap.min.js"></script>
+
+    	<!-- load the page style -->
+    	<link rel="stylesheet" href="css/bootstrap.min.css">
+    	<link rel="stylesheet" href="css/main.css">
+
+    </head>
+
+    <body>
+
+    	<div class="container">
+
+    		<!-- start of header section of webpage -->
+
+    		<header class="row">
+
+    			<div class="col-md-6">
+
+    				<img class = "title-logo img-responsive" width="100px" height="100px" src="images/Udacity_Logo.svg" alt="udacity-logo">
+
+    			</div>
+
+    			<div class="col-md-6 text-right text-uppercase">
+
+    				<h1 class="title-super text-thin">Ashish Chopra</h1>
+    				<h4>front-end ninja</h4>
+
+    			</div>
+
+    		</header>
+
+    		<!-- end of header section -->
+
+    		<hr>
+
+    		<div class="row">
+
+    			<div class="col-md-12">
+
+    				<!-- The <picture> tag gives web developers more flexibility in specifying image resources.
+                         The most common use of the <picture> element will be for art direction in responsive designs. Instead of having one image that is scaled up or down based on the viewport width, multiple images can be designed to more nicely fill the browser viewport.
+
+                         The <picture> element holds two different tags: one or more <source> tags and one <img> tag.
+
+                         The <source> element has the following attributes:
+
+                         srcset (required) - defines the URL of the image to show
+                         media - accepts any valid media query that would normally be defined in a CSS -->
+
+                         <picture>
+
+                         	<source media="(min-width: 550px)" srcset="images/portfolio-large.jpg"/>
+                         	<source media="(min-width: 300px)" srcset="images/portfolio-medium.jpg">
+                         		<img class = "img-responsive" src="images/portfolio-small.jpg" alt="portfolio-image">
+
+                         	</picture>
+
+
+                         </div>
+
+                     </div>
+
+                     <div class="row">
+
+                     	<div class="col-md-12">
+
+                     		<h2 class="text-muted">Featured Work</h2>
+
+                     	</div>
+
+                     </div>
+
+                     <div class="row text-center">
+
+                     	<!-- The <section> tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document. -->
+
+                     	<section class="col-md-4">
+
+                     		<picture>
+                     			<source media="(min-width: 600px)" srcset="images/project1.jpg"/>
+                     			<source media="(min-width: 316px)" srcset="images/project1-large.jpg" />
+                     			<source media="(min-width: 158px)" srcset="images/project1-medium.jpg">
+                     				<img class = "img-responsive" src="images/project1-small.jpg" alt="project1-image">
+
+                     			</picture>
+
+                     			<h3 class="text-uppercase">Movie Trailer Website</h3>
+                     			<p><a href="https://github.com/ashishchopra605/Udacity-Full-Stack-Developer/tree/master/Movie%20Trailer%20Website">Link to project</a></p>
+
+                     		</section>
+
+                     		<section class="col-md-4">
+
+                     			<picture>
+                     				<source media="(min-width: 600px)" srcset="images/project2.jpg"/>
+                     				<source media="(min-width: 316px)" srcset="images/project2-large.jpg"/>
+                     				<source media="(min-width: 158px)" srcset="images/project2-medium.jpg">
+                     					<img class = "img-responsive" src="images/project2-small.jpg" alt="project2-image">
+
+                     				</picture>
+
+                     				<h3 class="text-uppercase">Hometown Project</h3>
+                     				<p><a href="https://github.com/ashishchopra605/web/tree/master/2.)%20Hometown%20Project">Link to project</a></p>
+
+                     			</section>
+
+                     			<section class="col-md-4">
+
+                     				<picture>
+                     					<source media="(min-width: 600px)" srcset="images/project3.jpg"/>
+                     					<source media="(min-width: 316px)" srcset="images/project3-large.jpg"/>
+                     					<source media="(min-width: 158px)" srcset="images/project3-medium.jpg">
+                     						<img class = "img-responsive" src="images/project3-small.jpg" alt="project3-image">
+
+                     					</picture>
+
+                     					<h3 class="text-uppercase">Responsive Blog</h3>
+                     					<p><a href="https://github.com/ashishchopra605/web/tree/master/3.)my%20first%20blog/my%20first%20blog">Link to project</a></p>
+
+                     				</section>
+
+                     			</div>
+
+                     		</div>
+
+                     	</body>
+
+                     	</html>
